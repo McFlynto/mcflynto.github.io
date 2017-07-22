@@ -21,10 +21,13 @@ body {
 }
 
 .container {
+  position: fixed;
   margin: 10px;
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
 
   display: grid;
-  grid-template-columns: 40% 40% calc(20% - 20px);
+  grid-template-columns: 40% 40% 20%;
   grid-template-rows: 20% 40% 40%;
   grid-template-areas:
   "header header menu"
