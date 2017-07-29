@@ -17,8 +17,8 @@ body {
 .box {
   background-color: #333538;
   color: white;
-  font-size: 140%;
   padding: 10px;
+  border: 8px solid white;
 }
 
 .header {
@@ -31,7 +31,8 @@ body {
 
   z-index: 300;
 
-  border: 8px solid white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 140%;
 }
 
 .contentcontainer {
@@ -39,9 +40,30 @@ body {
   width: 100%;
   max-width: 1300px;
 
-  position: absolute;
+  position: relative;
   top: 15vh;
 
-  border: 8px solid white;
   border-top: none;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 120%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.Vorstellung {
+}
+
+.footer {
+  box-sizing: border-box;
+  width: 100%;
+
+  position: relative;
+  top: 15vh;
+
+  border-top: none;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 80%;
 }
