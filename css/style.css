@@ -8,39 +8,62 @@ body {
   display: none;
 }
 
+/* grid definitions */
 .header {
   grid-area: header;
 }
 
 .menu {
   grid-area: menu;
+  display: none;
 }
 
 .content {
   grid-area: content;
 }
 
+/* container setup */
 .container {
+  grid-area: container;
+}
+
+.gridcontainer {
   position: fixed;
-  margin: 10px;
-  height: calc(100% - 40px);
-  width: calc(100% - 40px);
+  height: calc(100vh + 1px);
+  width: calc(100vw + 1px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
 
   display: grid;
-  grid-template-columns: 40% 40% 20%;
-  grid-template-rows: 20% 40% 40%;
+  grid-template-columns: 0.5% 39.5% calc(40% - 40px) 19.5% 0.5%;
+  grid-template-rows: 0.5% 15% calc(45% - 46px) 40% 0.5%;
   grid-template-areas:
-  "header header menu"
-  "content content menu"
-  "content content menu";
+  ". . . . ."
+  ". header header header ."
+  ". content content content ."
+  ". content content content ."
+  ". . . . .";
 
   grid-gap: 10px;
 }
 
+/* box & content styling */
 .box {
-  box-sizing: border-box;
   background-color: #333538;
   color: white;
   font-size: 150%;
   padding: 10px;
+}
+
+.content {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
