@@ -32,7 +32,32 @@ body {
   z-index: 300;
 
   font-family: 'Roboto Mono', monospace;
-  font-size: 140%;
+  font-size: 1.2em;
+  line-height: 1em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftheader .rightheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titletwo {
+  font-size: 0.8em;
+}
+
+@media screen and (max-height: 400px) {
+  .header {
+    font-size: 1em;
+  }
+  .titletwo {
+    font-size: 0.8em;
+  }
 }
 
 .contentcontainer {
@@ -46,7 +71,7 @@ body {
   border-top: none;
 
   font-family: 'Roboto', sans-serif;
-  font-size: 120%;
+  font-size: 1em;
 
   display: flex;
   flex-direction: column;
@@ -65,5 +90,53 @@ body {
   border-top: none;
 
   font-family: 'Roboto', sans-serif;
-  font-size: 80%;
+  font-size: 0.7em;
+}
+
+/* Responsive Menu */
+
+.menuresponsive {
+  display: none;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: auto;
+  width: 200px;
+  background-color: rgb(57, 95, 155);
+  background-color: rgba(57, 95, 155, 0.9);
+  padding: 20px 10px;
+  z-index: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+}
+
+.menuresponsive a {
+  display: block;
+  text-align: left;
+  color: #FFFCEF;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.icon {
+  display: block;
+
+  color: #FFFCEF;
+
+  padding: 2px;
+  text-decoration: none;
+  font-size: 26px;
+  z-index: 500;
+}
+
+.icon.responsive {
+  color: rgb(51, 53, 56);
+}
+.menuresponsive.responsive {
+  display: block;
+}
+.menuresponsive.responsive a:hover {
+  background-color: rgb(51, 53, 56);
+  background-color: rgba(51, 53, 56, 0.8)
 }

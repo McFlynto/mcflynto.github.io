@@ -8,18 +8,19 @@
   <meta name="author" content="Julian Treutler">
   <meta name="publisher" content="Julian Treutler">
   <meta name="copyright" content="Julian Treutler">
-  <meta name="description" content="VWebentwicklung und Kreativprojekte in Bochum und Umgebung">
-  <meta name="keywords" content="Julian Treutler, mcflnyto, Webentwicklung, Kreative Arbeit, Coding,
-   Webdevelopment, Marketing, Werbung, Webdesign, Basteln, Nerdlife,
-   Bochum, Ruhrgebiet, Pott, Deutschland, Dortmund, Essen, Nürnberg, Lingen, Münster">
-  <meta name="page-topic" content="Medien">
-  <meta name="page-type" content="Produktinfo">
-  <meta name="audience" content="Alle">
-  <meta http-equiv="content-language" content="de">
+  <meta name="description" content="Webdeveloper from Bochum, Germany">
+  <meta name="keywords" content="Julian Treutler, mcflnyto, Webdev, Creative, Coding,
+   Webdevelopment, Marketing, Webdesign, Tinkering, Nerdlife,
+   Bochum, Ruhrgebiet, Pott, Germany, Deutschland, Dortmund, Essen, Nürnberg, Lingen, Münster">
+  <meta name="audience" content="all">
+  <meta http-equiv="content-language" content="en">
   <meta name="robots" content="index, follow">
 
   <!-- Font Integration -->
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+
+  <!-- Font Awesome Integration (Fancy Icons) -->
+  <link rel="stylesheet" href="./css/font_awesome/css/font-awesome.min.css">
 
   <!-- CSS Stylesheet-->
   <link href="./css/style.css" type="text/css" rel="stylesheet" />
@@ -60,7 +61,14 @@
 <body>
   <div class="container">
     <div class="box header">
-      Julian Treutler
+      <div class="leftheader">
+        <span class="titleone">Julian Treutler</span><br />
+        <span class="titletwo">&lt;Webdeveloper&gt;</span>
+      </div>
+      <div class="rightheader">
+        <div class="menubutton"><a href="javascript:void(0);" class="icon" id="button1" onclick="respMenu()">&#9776;</a>
+        </div>
+      </div>
     </div>
     <div class="box contentcontainer">
       <div class="Vorstellung">
@@ -69,9 +77,18 @@
     </div>
 
     <div class="box footer">
-      check the footer
+      &copy; Julian Treutler &sdot; 2017
     </div>
   </div>
+
+  <div class="menuresponsive" id="mobilemenu" onclick="respMenu()">
+    <a href="#Home">Home</a><br>
+    <a href="#Projects">Projects</a><br>
+    <a href="#Code">Code</a>
+  </div>
+
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
