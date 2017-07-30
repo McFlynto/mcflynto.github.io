@@ -1,13 +1,13 @@
 $('document').ready(function() {
   /* Toggle menu to show or hide on click*/
-  $('#button1').click(function(e) {
+  $('#button1').on('click touch', function(e) {
     e.stopPropagation();
     $('.icon, .menuresponsive').toggleClass('responsive');
   });
-  $('.menuresponsive').click(function(e) {
+  $('.menuresponsive').on('click touch', function(e) {
     e.stopPropagation();
   });
-  $('body,html').click(function(e) {
+  $('body,html').on('click touch', function(e) {
     $('.menuresponsive, .icon').removeClass('responsive');
   });
 });
