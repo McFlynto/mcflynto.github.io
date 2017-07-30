@@ -117,6 +117,15 @@ body {
     color: #42f492;
 }
 
+.blink_me {
+  animation: blinker 1s steps(1) infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 1; }
+  0% { opacity: 0; }
+}
+
 .worktext {
   margin-bottom: 10px;
 }
