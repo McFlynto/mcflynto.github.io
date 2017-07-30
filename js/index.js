@@ -1,12 +1,13 @@
-/* Toggle between adding and removing the "responsive" class to #mainmenu on click */
-function respMenu() {
-  var x = document.getElementById("mobilemenu");
-  var y = document.getElementById("button1");
-  if (x.className === "menuresponsive") {
-    x.className += " responsive";
-    y.className += " responsive";
-  } else {
-    x.className = "menuresponsive";
-    y.className = "icon";
-  }
-}
+$('document').ready(function() {
+  /* Toggle menu to show or hide on click*/
+  $('#button1').click(function(e) {
+    e.stopPropagation();
+    $('.icon, .menuresponsive').toggleClass('responsive');
+  });
+  $('.menuresponsive').click(function(e) {
+    e.stopPropagation();
+  });
+  $('body,html').click(function(e) {
+    $('.menuresponsive, .icon').removeClass('responsive');
+  });
+});
