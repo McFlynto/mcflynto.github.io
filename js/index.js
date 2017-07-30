@@ -7,7 +7,7 @@ $('document').ready(function() {
   $('.menuresponsive').on('click touch', function(e) {
     e.stopPropagation();
   });
-  $('body,html').on('click touch', function(e) {
+  $('body,html,.content,.footer').on('click touch', function(e) {
     $('.menuresponsive, .icon').removeClass('responsive');
   });
 });
