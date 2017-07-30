@@ -77,7 +77,48 @@ body {
   flex-direction: column;
 }
 
+/* Landing Page / Presentation */
 .Vorstellung {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoimg img {
+  width: 8em;
+  border-radius: 45%;
+}
+
+.infoimg {
+  margin: 20px 0 20px 0;
+}
+
+.infotext {
+  text-align: center;
+}
+
+.hey {
+  margin-bottom: 10px;
+}
+
+.desctext {
+  margin-bottom: 10px;
+}
+
+.worktext p {
+    display: inline;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -moz-margin-start: 0;
+    -moz-margin-end: 0;
+
+    color: #42f492;
+}
+
+.worktext {
+  margin-bottom: 10px;
 }
 
 .footer {
