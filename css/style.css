@@ -133,6 +133,7 @@ body {
 .footer {
   box-sizing: border-box;
   width: 100%;
+  max-width: 1300px;
 
   position: relative;
   top: 15vh;
