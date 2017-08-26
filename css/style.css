@@ -130,6 +130,8 @@ body {
   margin-bottom: 10px;
 }
 
+/* Footer */
+
 .footer {
   box-sizing: border-box;
   width: 100%;
@@ -201,3 +203,9 @@ body {
   background-color: rgb(51, 53, 56);
   background-color: rgba(51, 53, 56, 0.8)
 }
+
+/* Projects */
+
+/* Code */
+
+/* Contact */
