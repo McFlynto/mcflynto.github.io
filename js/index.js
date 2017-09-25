@@ -11,3 +11,8 @@ $('document').ready(function() {
     $('.menuresponsive, .icon').removeClass('responsive');
   });
 });
+
+//Email Adress Anti-Spam var
+
+var first = "julian.treutler";
+var last = "helge.media";

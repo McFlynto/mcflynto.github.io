@@ -2,6 +2,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #FFFCEF;
 }
 
 /* container setup (centering) */
@@ -16,9 +17,9 @@ body {
 /* box & content styling */
 .box {
   background-color: #333538;
-  color: white;
+  color: #FFFCEF;
   padding: 10px;
-  border: 8px solid white;
+  border: 8px solid #FFFCEF;
 }
 
 .header {
@@ -152,7 +153,7 @@ body {
 }
 
 .footer i {
-  color: white;
+  color: #FFFCEF;
   font-size: 1.8em;
   letter-spacing: 3px;
 }
@@ -209,3 +210,15 @@ body {
 /* Code */
 
 /* Contact */
+.Contact {
+  text-align: center;
+}
+
+.Contact a {
+  text-decoration: none;
+  color: rgb(144, 184, 235);
+}
+
+.Contact a:hover {
+  color: #42f492;
+}
